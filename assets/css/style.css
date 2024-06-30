@@ -28,6 +28,12 @@ body {
 }
 
 .sidebar-open {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
   background: transparent;
   border-color: transparent;
   cursor: pointer;
@@ -120,6 +126,8 @@ hr {
 }
 
 .secondary-cta {
+  display: inline-flex;
+  gap: 12px;
   font-size: 24px;
   font-weight: 600;
   margin-left: 40px;
