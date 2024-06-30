@@ -14,7 +14,8 @@ body {
 }
 
 .rain-bg {
-  background: url(/assets/images/weather_rain.jpg);
+  height: 100vh;
+  background: url('/assets/images/weather_rain.jpg') center/cover no-repeat;
 }
 
 /* NAVBAR */
@@ -23,6 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 48px 96px;
+  margin-bottom: 120px;
 }
 
 .sidebar-open {
@@ -42,6 +44,7 @@ body {
 
 .sidebar {
   position: fixed;
+  z-index: 999;
   top: 0;
   right: 0;
   width: 30%;
@@ -77,5 +80,110 @@ a {
 }
 
 hr {
-  border: 1px solid #444040;
+  border: 1px solid #fff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 200px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city-info {
+  width: 50%;
+}
+
+.city-title {
+  font-size: 120px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.city-desc {
+  margin-top: 40px;
+  font-size: 24px;
+  color: #fff;
+  line-height: 150%;
+}
+
+.primary-cta {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 32px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.secondary-cta {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+.actions {
+  margin-top: 40px;
+}
+
+.weather-info {
+  display: flex;
+  height: fit-content;
+  gap: 32px;
+}
+
+.weather-today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  color: #fff;
+  padding: 50px 60px;
+  border: 1px solid #727272;
+  border-radius: 40px;
+  font-size: 32px;
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.18) 0.74%,
+    rgba(255, 255, 255, 0.07) 100.18%
+  );
+  box-shadow: 0px 16.838px 33.677px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.weather-days {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.weather-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: #fff;
+  color: #fff;
+  padding: 16px 20px;
+  border: 1px solid #727272;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.18) 0.74%,
+    rgba(255, 255, 255, 0.07) 100.18%
+  );
+  box-shadow: 0px 16.838px 33.677px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.weather-day img {
+  width: 24px;
+  height: 24px;
 }
