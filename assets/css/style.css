@@ -13,9 +13,34 @@ body {
   color: #28292f;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+hr {
+  border: 1px solid #fff;
+}
+
 .rain-bg {
   height: 100vh;
   background: url('/assets/images/weather_rain.jpg') center/cover no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 200px;
+}
+
+.glass {
+  border: 1px solid #727272;
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.18) 0.74%,
+    rgba(255, 255, 255, 0.07) 100.18%
+  );
+  box-shadow: 0px 16.838px 33.677px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
 }
 
 /* NAVBAR */
@@ -24,8 +49,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 48px 96px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
+
+/* SIDEBAR */
 
 .sidebar-open {
   display: flex;
@@ -80,19 +107,7 @@ body {
   border-bottom: 1px solid #444040;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-hr {
-  border: 1px solid #fff;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 200px;
-}
+/* CITY INFO */
 
 .main {
   display: flex;
@@ -137,6 +152,8 @@ hr {
   margin-top: 40px;
 }
 
+/* WEATHER INFO */
+
 .weather-info {
   display: flex;
   height: fit-content;
@@ -149,19 +166,10 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: #fff;
   color: #fff;
   padding: 50px 60px;
-  border: 1px solid #727272;
   border-radius: 40px;
   font-size: 32px;
-  background: linear-gradient(
-    111deg,
-    rgba(255, 255, 255, 0.18) 0.74%,
-    rgba(255, 255, 255, 0.07) 100.18%
-  );
-  box-shadow: 0px 16.838px 33.677px 0px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12px);
 }
 
 .weather-days {
@@ -175,26 +183,19 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  background-color: #fff;
   color: #fff;
   padding: 16px 20px;
-  border: 1px solid #727272;
   border-radius: 20px;
   font-size: 16px;
   font-weight: 700;
-  background: linear-gradient(
-    111deg,
-    rgba(255, 255, 255, 0.18) 0.74%,
-    rgba(255, 255, 255, 0.07) 100%
-  );
-  box-shadow: 0px 16px 33px 0px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12px);
 }
 
 .weather-day img {
   width: 24px;
   height: 24px;
 }
+
+/* FOOTER */
 
 .side-weather-info {
   display: flex;
@@ -204,15 +205,7 @@ hr {
   bottom: 48px;
   right: 96px;
   padding: 30px 40px;
-  border: 1px solid #727272;
   border-radius: 100px;
-  background: linear-gradient(
-    111deg,
-    rgba(255, 255, 255, 0.18) 0.74%,
-    rgba(255, 255, 255, 0.07) 100%
-  );
-  box-shadow: 0px 13px 26px 0px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12px);
 }
 
 .side-item {
