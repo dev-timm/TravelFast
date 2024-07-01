@@ -23,13 +23,18 @@ hr {
 }
 
 .rain-bg {
-  height: 100vh;
-  background: url('/assets/images/weather_rain.jpg') center/cover no-repeat;
+  background: url(../images/weather_rain.jpg) center/cover no-repeat;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 200px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .glass {
@@ -109,14 +114,9 @@ hr {
 
 /* CITY INFO */
 
-.main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .city-info {
   width: 50%;
+  margin-bottom: 120px;
 }
 
 .city-title {
@@ -199,11 +199,9 @@ hr {
 
 .side-weather-info {
   display: flex;
+  margin-left: auto;
   gap: 32px;
   width: fit-content;
-  position: absolute;
-  bottom: 48px;
-  right: 96px;
   padding: 30px 40px;
   border-radius: 100px;
 }
@@ -224,4 +222,89 @@ hr {
   font-size: 24px;
   font-weight: 600;
   color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 96px;
+  }
+
+  .city-info {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .weather-today {
+    padding: 50px 60px;
+    border-radius: 40px;
+    font-size: 32px;
+  }
+
+  .weather-days {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .weather-day {
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .weather-day img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .side-weather-info {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 160px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .city-title {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    padding: 20px 32px;
+    margin-bottom: 80px;
+  }
+
+  .container {
+    padding: 32px;
+  }
+
+  .city-title {
+    font-size: 48px;
+  }
+
+  .actions {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 99;
+    background-color: #242424;
+    padding: 32px 0;
+    text-align: center;
+  }
+
+  .sidebar {
+    width: 88%;
+  }
 }
