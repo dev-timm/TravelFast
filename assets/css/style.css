@@ -382,6 +382,10 @@ ul {
   }
 
   .secondary-cta {
-    font-size: 16px;
+    font-size: 20px;
+  }
+
+  .sidebar {
+    width: 84%;
   }
 }
