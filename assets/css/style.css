@@ -343,3 +343,45 @@ ul {
     width: 88%;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .city-title {
+    font-size: 40px;
+  }
+
+  .city-desc {
+    font-size: 20px;
+  }
+
+  .weather-info {
+    flex-direction: column;
+  }
+
+  .weather-today {
+    font-size: 24px;
+  }
+
+  .weather-days {
+    gap: 16px;
+  }
+
+  .side-weather-info {
+    gap: 12px;
+  }
+
+  .side-info-title {
+    font-size: 14px;
+  }
+
+  .side-info-value {
+    font-size: 20px;
+  }
+
+  .primary-cta {
+    font-size: 20px;
+  }
+
+  .secondary-cta {
+    font-size: 16px;
+  }
+}
