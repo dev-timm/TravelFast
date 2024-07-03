@@ -93,8 +93,9 @@ ul {
   z-index: 999;
   top: 0;
   right: 0;
+  overflow-y: scroll;
   width: 30%;
-  height: 100%;
+  height: calc(100vh - 39px);
   padding: 40px;
   background-color: #242424;
   transform: translate(100%);
