@@ -112,7 +112,7 @@ ul {
   font-size: 2rem;
 }
 
-.sidebar-item {
+.sidebar-city {
   display: flex;
   justify-content: space-between;
   font-size: 24px;
@@ -123,7 +123,7 @@ ul {
   transition: all 0.3s linear;
 }
 
-.sidebar-item:hover {
+.sidebar-city:hover {
   font-size: 26px;
 }
 
@@ -135,7 +135,7 @@ ul {
 }
 
 .city-title {
-  font-size: 120px;
+  font-size: 100px;
   color: #fff;
   font-weight: 900;
 }
