@@ -6,14 +6,17 @@ const sidebarOpen = document.querySelector('.sidebar-open');
 const sidebarClose = document.querySelector('.sidebar-close');
 const cityDOM = document.querySelector('.city-info');
 
+// open sidebar
 sidebarOpen.addEventListener('click', () => {
   sidebar.classList.add('show-sidebar');
 });
 
+// close sidebar
 sidebarClose.addEventListener('click', () => {
   sidebar.classList.remove('show-sidebar');
 });
 
+// add city links to sidebar
 const sidebarCity = cities
   .map((city) => {
     return `
@@ -29,6 +32,7 @@ const sidebarCity = cities
 
 sidebarList.innerHTML = sidebarCity;
 
+// display selected city in UI
 const displayCity = (allCities) => {
   let singleCity = allCities.map((city) => {
     return `<h1 class="city-title">${city.name}</h1>
